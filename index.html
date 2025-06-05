@@ -28,6 +28,14 @@
     audio {
       margin: 2rem 0;
     }
+    input[type="email"] {
+      padding: 0.8rem;
+      border-radius: 30px;
+      border: none;
+      width: 100%;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
     .cta-button {
       background-color: #00c9a7;
       color: #000;
@@ -46,6 +54,11 @@
       font-size: 0.9rem;
       color: #aaa;
     }
+    form {
+      margin-top: 2rem;
+      max-width: 400px;
+      width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -55,30 +68,28 @@
   </p>
 
   <audio controls>
-    <source src="Mentora_01.MP3" type="audio/mpeg" />
+    <source src="Mentora_Ep01.mp3" type="audio/mpeg" />
     Il tuo browser non supporta l'audio.
   </audio>
 
-<form action="https://formspree.io/f/xjkrkzrd" method="POST" style="margin-top: 2rem; max-width: 400px; width: 100%;">
-  <input 
-    type="email" 
-    name="email" 
-    placeholder="Inserisci la tua email" 
-    required 
-    style="padding: 0.8rem; border-radius: 30px; border: none; width: 100%; margin-bottom: 1rem; font-size: 1rem;"
-  />
-  <button 
-    type="submit" 
-    class="cta-button"
-    style="width: 100%;"
-  >
-    Iscriviti per ricevere nuovi episodi
-  </button>
-  <p style="font-size: 0.8rem; color: #ccc; margin-top: 0.5rem;">
-    Niente spam. Solo contenuti per ispirarti.
-  </p>
-</form>
-
+  <form action="https://formspree.io/f/xjkrkzrd" method="POST">
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Inserisci la tua email" 
+      required
+    />
+    <button 
+      type="submit" 
+      class="cta-button"
+      style="width: 100%;"
+    >
+      Iscriviti per ricevere nuovi episodi
+    </button>
+    <p style="font-size: 0.8rem; color: #ccc; margin-top: 0.5rem;">
+      Niente spam. Solo contenuti per ispirarti.
+    </p>
+  </form>
 
   <footer>
     © 2025 Mentora. Tutti i diritti riservati.
